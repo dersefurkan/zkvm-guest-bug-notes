@@ -1,7 +1,8 @@
 # zkvm-guest-bug-notes
 
-A living, curated map of **zkVM guest-program and off-chain → onchain binding bug classes**, with
-public references for every entry.
+A living, curated map of **zkVM guest-program and off-chain → on-chain binding bug classes**, with
+public references for every entry. Teaching notes, not a disclosure dump and not a zkVM-internal
+soundness tracker.
 
 The zk ecosystem has excellent catalogs for circuit-level and proof-system-level bugs
 ([0xPARC/zk-bug-tracker](https://github.com/0xPARC/zk-bug-tracker),
@@ -49,9 +50,11 @@ documentation, and published writeups. No undisclosed material, no private findi
 | 9 | [Upgrade-path ELF↔vk mismatch](classes/09-upgrade-path-elf-vk-mismatch.md) | The guest program was upgraded, but the onchain key allowlist — or the deprecated verifier — was not rotated with it. | 4 |
 | 10 | [Wrapper / trusted-setup binding gaps](classes/10-wrapper-trusted-setup-binding.md) | The STARK→SNARK wrapper (Groth16/PLONK) re-introduces field-aliasing and setup-trust assumptions at the last mile. | 5 |
 
+See [SECURITY.md](SECURITY.md) for disclosure rules.
+
 ## Who maintains this
 
-Maintained by **Furkan Derse** — dersefurkan32@gmail.com · Telegram:
+Maintained by **Furkan Derse** — **dersefurkan32@gmail.com** · Telegram:
 [@FURY_Fn](https://t.me/FURY_Fn).
 
 This is a curated notes collection, not an exhaustive dataset. Entries are added or amended as new
