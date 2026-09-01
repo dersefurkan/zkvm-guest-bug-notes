@@ -49,6 +49,8 @@ documentation, and published writeups. No undisclosed material, no private findi
 | 8 | [Replay & missing domain separation](classes/08-replay-missing-domain-separation.md) | A valid proof or signature is reusable across roles, chains or contexts it was never bound to. | 4 |
 | 9 | [Upgrade-path ELF↔vk mismatch](classes/09-upgrade-path-elf-vk-mismatch.md) | The guest program was upgraded, but the onchain key allowlist — or the deprecated verifier — was not rotated with it. | 4 |
 | 10 | [Wrapper / trusted-setup binding gaps](classes/10-wrapper-trusted-setup-binding.md) | The STARK→SNARK wrapper (Groth16/PLONK) re-introduces field-aliasing and setup-trust assumptions at the last mile. | 5 |
+| 11 | [Native ↔ recursive verifier divergence](classes/11-native-recursive-verifier-divergence.md) | The compressed/wrapped verifier constrains less than the native one checks — valid on-chain, invalid natively, up to universal forgery. | 4 |
+| 12 | [Unbound prover hints & witness values](classes/12-unbound-prover-hints.md) | Verifier-circuit hints (inverses, range-check limbs, witnesses) not bound to the values they claim — the prover chooses the circuit's inputs. | 4 |
 
 See [SECURITY.md](SECURITY.md) for disclosure rules.
 
