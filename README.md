@@ -92,3 +92,7 @@ Corrections and additions are welcome — open an issue or a pull request. Groun
 ## License
 
 [MIT](LICENSE).
+
+---
+
+I review one guest plus its verifier the same way these notes are organized: five days, $1,500, a private Foundry repo. [dersefurkan.github.io](https://dersefurkan.github.io) · dersefurkan32@gmail.com · Telegram [@FURY_Fn](https://t.me/FURY_Fn)
